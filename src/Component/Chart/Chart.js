@@ -1,5 +1,6 @@
 import React from 'react';
-import { Area, AreaChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, CartesianGrid, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import './Chart.css'
 
 const Chart = () => {
     const data = [
@@ -41,7 +42,7 @@ const Chart = () => {
         }
     ]
     return (
-      <div>
+      <div className="chart-container">
    <AreaChart width={730} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
