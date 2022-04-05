@@ -2,8 +2,10 @@ import React from 'react';
 import './Home.css';
 import laptop from '../../image/laptop.jpg';
 import Reviews from '../Reviews/Reviews';
+import useCarts from '../Hook/Hook';
 
 const Home = () => {
+  const [carts, setCarts] = useCarts();
     return (
        <div className="div">
             <div className='home-container'>
@@ -17,6 +19,7 @@ const Home = () => {
             </div>
            
         </div>
+        
         <Reviews></Reviews>
        </div>
        
