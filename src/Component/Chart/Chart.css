@@ -1,3 +1,5 @@
 .chart-container{
-    margin: 120px 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 60px;
 }

@@ -1,32 +1,45 @@
 [
     {
       "id": "624a0b5cdf17b521c405bba8",
-      "picture": "/public/photos/review-1.jpg",
-      "name": "Avery Cote"
+      "picture": "photos/review-1.jpg",
+      "comment": "just amazing!!",
+      "name": "Avery Cote",
+      "rating": "5"
     },
     {
       "id": "624a0b5cd768ab1a44f43fb4",
-      "picture":  "/public/photos/review-2.jpg",
-      "name": "Lucas Castillo"
+      "picture":  "photos/review-2.jpg",
+      "comment": "hightly recomeded laptop ",
+      "name": "Lucas Castillo",
+      "rating": "5"
     },
     {
       "id": "624a0b5ce9c395c3148dacc2",
-      "picture":  "/public/photos/review-3.jpg",
-      "name": "Liliana Marsh"
+      "picture": "photos/review-3.jpg" ,
+      "comment": "performance is very well",
+      "name": "Liliana Marsh",
+      "rating": "4"
     },
     {
       "id": "624a0b5c3ee9d6953f401e16",
-      "picture":  "/public/photos/review-4.jpg",
-      "name": "Matthews Barker"
+      "picture": "photos/review-4.jpg" ,
+      "comment": "awsome laptop",
+      "name": "Matthews Barker",
+      "rating": "5"
     },
     {
       "id": "624a0b5ce26d5219c18011a7",
-      "picture": "/public/photos/review-5.jpg",
-      "name": "Fletcher Sharp"
+      "picture":"photos/revieew-5.jpg",
+      "comment": "this is best laptop for learning programming",
+      "name": "Fletcher Sharp",
+      "rating": "4"
     },
     {
       "id": "624a0b5c288311ba0a972823",
-      "picture":  "/public/photos/review-6.jpg",
-      "name": "Barron Daniels"
+      "picture": "photos/review-6.jpg",
+      "comment": "one of the bes laptop for students",
+      "name": "Barron Daniels",
+      "rating": "4"
+
     }
   ]

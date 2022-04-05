@@ -26,7 +26,8 @@ const Reviews = () => {
          }
      </CardGroup>
      
-      <button><Link to="/review">Review</Link></button>
+      <button><Link to="/review">Review
+      </Link></button>
        </div>
     );
 };

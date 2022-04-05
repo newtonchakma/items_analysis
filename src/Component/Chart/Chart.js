@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, CartesianGrid, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 import './Chart.css'
 
 const Chart = () => {
@@ -43,7 +43,8 @@ const Chart = () => {
     ]
     return (
       <div className="chart-container">
-   <AreaChart width={730} height={250} data={data}
+  . <div className="chart-one">
+  <AreaChart width={630} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -62,13 +63,25 @@ const Chart = () => {
   <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
   <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
 </AreaChart>
+  </div>
 
 
 
-          <PieChart width={730} height={730}>
-  <Pie data={data} dataKey="investment" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-  <Pie data={data} dataKey="revenue" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
-</PieChart>
+
+<div className="chart-two">
+
+<LineChart width={630} height={250} data={data}
+  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+  <CartesianGrid strokeDasharray="3 3" />
+  <XAxis dataKey="month" />
+  <YAxis />
+  <Tooltip />
+  <Legend />
+  <Line type="monotone" dataKey="investment" stroke="#8884d8" />
+  <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
+</LineChart>
+</div>
+
       </div>
     );
 };
