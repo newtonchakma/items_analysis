@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CardGroup } from 'react-bootstrap';
 import Review from '../Review/Review';
+import './reviews.css'
 
 const Reviews = () => {
     const [carts, setCarts] = useState([]);
@@ -12,12 +13,12 @@ const Reviews = () => {
     return (
       
        
-       <div>
-       <h2>name:{carts.length}</h2>
+       <div className="review-container">
+    
      <CardGroup>
          
        {
-            carts.map(review => <Review 
+        carts.slice(0,3).map(review => <Review 
             key={review.id}
             review={review}
             ></Review>)

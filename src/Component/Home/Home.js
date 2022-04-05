@@ -1,10 +1,12 @@
 import React from 'react';
 import './Home.css';
 import laptop from '../../image/laptop.jpg';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
-        <div className='home-container'>
+       <div className="div">
+            <div className='home-container'>
             <div className="home-details">
                 <h2>Lorem ipsum dolor sit amet consectetur,<br></br> adipisicing elit. Atque, ut.</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero inventore nobis doloribus perferendis, reprehenderit quasi impedit officia nam aliquam ab.</p>
@@ -13,8 +15,14 @@ const Home = () => {
             <div className="home-cover-photo">
             <img src={laptop} alt="" />
             </div>
+           
         </div>
+        <Reviews></Reviews>
+       </div>
+       
+       
     );
+  
 };
 
 export default Home;

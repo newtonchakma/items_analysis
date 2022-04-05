@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Chart from './Component/Chart/Chart';
 import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Reviews from './Component/Reviews/Reviews';
@@ -12,6 +13,7 @@ function App() {
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/review' element={<Reviews></Reviews>}></Route>
+       <Route path='/chart' element={<Chart></Chart>}></Route>
      </Routes>
     </div>
   );

@@ -8,7 +8,7 @@ const Review = (props) => {
         <>
       
     
-      <Card>
+      <Card className='card-diteals'>
       <Card.Img variant="top" src={picture} />
     <img src={picture} alt="" />
     <Card.Body>
