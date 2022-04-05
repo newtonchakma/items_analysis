@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { CardGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Review from '../Review/Review';
 import './reviews.css'
 
@@ -25,7 +26,7 @@ const Reviews = () => {
          }
      </CardGroup>
      
-       
+      <button><Link to="/review">Review</Link></button>
        </div>
     );
 };
